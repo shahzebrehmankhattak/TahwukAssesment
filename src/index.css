@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-sidebar-active{
+  background-color: rgba(152, 174, 192, 0.1) !important;
+  color: #fff !important;
+}
+
+.bg-sidebar-inactive {
+  background-color: transparent !important;
+  color: #7B9FC3 !important;
+}
+
+.custom-table .ant-table-thead > tr > th {
+  background-color: #F5F8FB !important;
+  color: #1D3557 !important;
+  font-weight: 400;
+  border-bottom: 1px solid #E0E8ED !important;
+}
+
+.collpased-button {
+  box-shadow: 0px 0px 2px 0px #0000001A;
+background: white;
+border-radius: 100%;
+padding: 10px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  .collpased-button {
+  background: #1D3557;
+  border-radius: 100%;
+  padding: 2px;
+  }
+}
+

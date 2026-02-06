@@ -1,16 +1,66 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+‎# Frontend Technical Assessment
+‎
+‎This project is a frontend web application developed as part of a technical assessment. It focuses on building a responsive, clean, and maintainable user interface using modern frontend technologies.
+‎
+‎---
+‎
+‎## Tech Stack
+‎
+‎- React (Vite)
+‎- React Router DOM
+‎- Ant Design (AntD)
+‎- Tailwind CSS
+‎- Recharts
+‎
+‎---
+‎
+‎## Setup & Installation
+‎
+‎``bash
+‎npm install
+‎Run the Project
+‎Start the development server:
+‎
+‎npm run dev
+‎The application will be available at:
+‎
+‎http://localhost:5173
+‎Project Overview
+‎Built using Vite + React for fast development and optimized builds.
+‎
+‎React Router DOM is used for routing and layout management.
+‎
+‎Ant Design provides ready-to-use UI components.
+‎
+‎Tailwind CSS is used for custom styling and responsive design.
+‎
+‎Recharts is used for data visualization.
+‎
+‎The project structure follows a component-based approach for better readability and scalability.
+‎
+‎Assumptions
+‎The task focuses on frontend implementation only.
+‎
+‎Mock or static data is used where backend APIs are not provided.
+‎
+‎Authentication and backend services are out of scope unless specified.
+‎
+‎The application targets modern web browsers.
+‎
+‎Future Improvements
+‎With more time, the following could be improved:
+‎
+‎Better error handling and loading states
+‎
+‎Accessibility enhancements
+‎
+‎Unit and integration testing
+‎
+‎Performance optimization
+‎
+‎UI/UX refinements and animations
+‎
+‎
+‎Author
+‎Shahzeb Rehman khattak 
+‎Frontend / UI Developer

@@ -86,11 +86,11 @@ const AppLayout = () => {
             }`}
             onClick={() => setCollapsed(!collapsed)}
           >
-            {collapsed ? (
-              <img src={arrowLeft} alt="" className="rotate-180 w-[24px]" />
-            ) : (
-              <img src={arrowLeft} alt="" />
-            )}
+            <img
+              src={arrowLeft}
+              alt=""
+              className={`${collapsed ? "rotate-180 w-[24px]" : ""}`}
+            />
           </div>
         </div>
       </Sider>

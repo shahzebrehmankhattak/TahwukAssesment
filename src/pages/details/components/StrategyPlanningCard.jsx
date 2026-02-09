@@ -5,7 +5,7 @@ import { Progress } from "antd";
 const StrategyPlanningCard = () => {
   return (
     <>
-      <Card className="mt-2">
+      <div className="common-card mt-2">
         <div className="flex justify-center md:justify-between items-center flex-wrap">
           <div className="grid justify-items-center md:justify-items-start">
             <div className="rounded-[30px] border border-[#E0E8ED]  p-[10px] text-center mb-2">
@@ -32,7 +32,7 @@ const StrategyPlanningCard = () => {
             />
           </div>
         </div>
-      </Card>
+      </div>
     </>
   );
 };

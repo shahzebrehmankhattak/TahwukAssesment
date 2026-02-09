@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Overview from "./Overview";
-import { Button, Card, Table } from 'antd'
+import { Button, Card, Table } from "antd";
 import Evidence from "./Evidence";
 
 const Tabs = () => {
@@ -30,15 +30,15 @@ const Tabs = () => {
           Evidence
         </Button>
       </div>
-  {activeTab === "overview" && (
-    <div>
-      <Overview/>
-    </div>
+      {activeTab === "overview" && (
+        <div>
+          <Overview />
+        </div>
       )}
 
       {activeTab === "evidence" && (
         <div>
-        <Evidence/>
+          <Evidence />
         </div>
       )}
     </>

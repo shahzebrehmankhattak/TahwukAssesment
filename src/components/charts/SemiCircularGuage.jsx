@@ -27,7 +27,7 @@ const SemiCircularGauge = ({
             startAngle={180}
             endAngle={0}
             innerRadius="70%"
-            outerRadius="90%"
+            outerRadius="82%"
             dataKey="value"
             stroke="none"
             cornerRadius={50}
@@ -39,8 +39,8 @@ const SemiCircularGauge = ({
       </ResponsiveContainer>
 
       {/* Center Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center mt-4">
-        <div className="font-bold text-[#1D3557] text-3xl sm:text-4xl md:text-5xl">
+      <div className="absolute inset-0 flex flex-col items-center justify-center mt-2">
+        <div className="font-bold text-[#1D3557] text-2xl sm:text-4xl md:text-5xl">
           {Math.round((percentage / max) * 100)}
           {valueSuffix}
         </div>

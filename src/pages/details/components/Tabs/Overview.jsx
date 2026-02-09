@@ -6,7 +6,7 @@ import LeadersCard from "./LeadersCard";
 const Overview = () => {
   return (
     <>
-      <Card className="rounded-2xl border border-[#E0E8ED] shadow-sm">
+      <div className="common-card">
         <div className="grid grid-cols-[200px_1fr] gap-4 overflow-x-auto">
           {tableData.map((row, index) => (
             <React.Fragment key={index}>
@@ -22,7 +22,7 @@ const Overview = () => {
             </React.Fragment>
           ))}
         </div>
-      </Card>
+      </div>
 
       <LeadersCard />
     </>

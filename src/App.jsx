@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./layout/AppLayout";
 import Dashboard from "./pages/dashboard";
 import Details from "./pages/details";
+import PageNotFound from "./pages/page-not-found";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/details" element={<Details />} />
           </Route>
+            {/* 404 Page */}
+            <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </>

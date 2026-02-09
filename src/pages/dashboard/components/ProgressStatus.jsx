@@ -11,7 +11,7 @@ import PerformanceBarChart from "../../../components/charts/BarChart";
 const ProgressStatus = () => {
   return (
     <>
-      <Card>
+      <div className="common-card">
         <div className="flex justify-center md:justify-between flex-wrap mb-4">
           <h2 className="font-bold text-base leading-[16px] capitalize text-[#1D3557] ">
             Progress Status
@@ -50,14 +50,14 @@ const ProgressStatus = () => {
           })}
         </Row>
         <div className="overflow-x-auto">
-          <div className="flex gap-4 mt-3 min-w-max">
+          <div className="flex gap-3 mt-3 min-w-max">
             {gridData.map((column, colIndex) => (
-              <div key={colIndex} className="flex flex-col gap-3">
+              <div key={colIndex} className="grid gap-3">
                 {column.items.map((item, itemIndex) => (
-                  <Card
+                  <div
                     key={itemIndex}
                     size="small"
-                    className="w-[140px] h-auto  rounded-xl border shadow-sm flex flex-col items-center bg-[#F5F8FB] border-[#E0E8ED]"
+                    className="p-5 rounded-xl border grid  bg-[#F5F8FB] border-[#E0E8ED]"
                   >
                     {/* Label */}
                     <div className="mb-2 font-normal text-[10px] leading-[16px] text-[#1D3557] text-center">
@@ -65,7 +65,7 @@ const ProgressStatus = () => {
                     </div>
 
                     {/* Levels */}
-                    <div className="flex flex-wrap justify-between gap-3 mt-2 p-4">
+                    <div className="grid grid-cols-2 justify-items-center items-center gap-2 mt-2">
                       {item.levels.map((level, i) => (
                         <div
                           key={i}
@@ -75,26 +75,26 @@ const ProgressStatus = () => {
                         </div>
                       ))}
                     </div>
-                  </Card>
+                  </div>
                 ))}
               </div>
             ))}
           </div>
         </div>
-      </Card>
+      </div>
       <Row gutter={[20, 15]}>
         <Col xl={8} lg={8} md={12} sm={12} xs={24}>
-          <Card>
-            <h3 className="font-bold text-base leading-[16px] capitalize text-[#1D3557] mb-10">
+          <div className="common-card">
+            <h3 className="font-bold text-base leading-[16px] capitalize text-[#1D3557] mb-3">
               Overall Compliance Score
             </h3>
             <div className="flex justify-center">
               <SemiCircularGauge value={65} title="Basic Standards 2025" />
             </div>
-          </Card>
+          </div>
         </Col>
         <Col xl={8} lg={8} md={12} sm={12} xs={24}>
-          <Card>
+          <div className="common-card">
             <h3 className="font-bold text-base leading-[16px] capitalize text-[#1D3557] mb-12">
               Top Performing Perspective Leaders
             </h3>
@@ -125,13 +125,13 @@ const ProgressStatus = () => {
                 {index !== userData.length - 1 && <Divider />}
               </div>
             ))}
-          </Card>
+          </div>
         </Col>
         <Col xl={8} lg={8} md={12} sm={12} xs={24}>
-          <Card>
-            <h4 className="font-bold text-base leading-[16px] capitalize text-[#1D3557]">
+          <div className="common-card">
+            <h3 className="font-bold text-base leading-[16px] capitalize text-[#1D3557]">
               Recent Activities
-            </h4>
+            </h3>
             <Divider className="mb-0" />
             {recentActivity?.map((user, index) => (
               <div key={user.id || index}>
@@ -153,21 +153,21 @@ const ProgressStatus = () => {
                 {index !== userData.length - 1 && <Divider />}
               </div>
             ))}
-          </Card>
+          </div>
         </Col>
       </Row>
       <Row gutter={[15, 15]}>
         <Col xl={16} lg={16} md={24} sm={24} xs={24}>
-          <Card>
+          <div className="common-card">
             <h3 className="font-bold text-base leading-[16px] capitalize text-[#1D3557] mb-10">
-              Audit Readiness
+            12-Month Performance
             </h3>
             <PerformanceBarChart />
-          </Card>
+          </div>
         </Col>
         <Col xl={8} lg={8} md={24} sm={24} xs={24}>
-          <Card>
-            <h3 className="font-bold text-base leading-[16px] capitalize text-[#1D3557] mb-10">
+          <div className="common-card">
+            <h3 className="font-bold text-base leading-[16px] capitalize text-[#1D3557] mb-2">
               Audit Readiness
             </h3>
             <div className="flex justify-center">
@@ -178,7 +178,7 @@ const ProgressStatus = () => {
                 
               />
             </div>
-            <Divider className=" mt-0"/>
+            <hr className=" mt-1 mb-2"/>
             <Row>
               <Col xl={12} lg={12} md={12} sm={12} xs={12}>
                 <div className="grid justify-items-center items-center gap-2">
@@ -201,7 +201,7 @@ const ProgressStatus = () => {
                 </div>
               </Col>
             </Row>
-          </Card>
+          </div>
         </Col>
       </Row>
     </>

@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { Layout, Menu, Button } from "antd";
 import { Outlet, Link, useLocation } from "react-router-dom";
-import { MenuFoldOutlined, MenuUnfoldOutlined ,ArrowRightOutlined} from "@ant-design/icons";
-
-import logo from "../assets/Tahwul.png";
+import logo from "../assets/logo.png";
 import HeaderPage from "../components/header";
-
 import home from "../assets/home.png";
 import medicalFile from "../assets/medical-file.png";
 import profile from "../assets/profile.png";
@@ -41,10 +38,10 @@ const AppLayout = () => {
         collapsed={collapsed}
         trigger={null}
         width={240}
-        collapsedWidth={0} // ✅ Mobile: fully hidden
-        breakpoint="lg" // ✅ Auto collapse below 1024px
+        collapsedWidth={0}
+        breakpoint="lg"
         onBreakpoint={(broken) => {
-          setCollapsed(broken); // auto close on tablet/mobile
+          setCollapsed(broken);
         }}
         className="bg-[#1D3557] relative"
       >
@@ -69,7 +66,7 @@ const AppLayout = () => {
                   ${
                     isActive
                       ? "bg-sidebar-active text-white"
-                      : "text-[#7B9FC3] hover:bg-[#1A2A3C]"
+                      : "!text-[#7B9FC3] hover:bg-[#1A2A3C]"
                   }
                 `}
               >
@@ -84,11 +81,13 @@ const AppLayout = () => {
         <div className="absolute right-[-20px] sm:right-[-28px] top-5 md:top-4">
           <div
             type="text"
-            className="text-xs md:text-base mr-0 md:mr-3 collpased-button"
+            className={`text-xs md:text-base collpased-button ${
+              collapsed ? "mr-0" : "md:mr-4"
+            }`}
             onClick={() => setCollapsed(!collapsed)}
           >
             {collapsed ? (
-              <ArrowRightOutlined className="text-white"/>
+              <img src={arrowLeft} alt="" className="rotate-180 w-[24px]" />
             ) : (
               <img src={arrowLeft} alt="" />
             )}

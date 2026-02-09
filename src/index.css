@@ -23,7 +23,12 @@
   box-shadow: 0px 0px 2px 0px #0000001A;
 background: white;
 border-radius: 100%;
-padding: 10px;
+padding:5px;
+}
+
+.collpased-button:hover{
+  background-color: #7B9FC3;
+  color: white;
 }
 
 @media screen and (min-width: 400px) and (max-width: 900px) {
@@ -34,3 +39,15 @@ padding: 10px;
   }
 }
 
+.shadow-card{
+  box-shadow: 12px 12px 23px #bebebe, -12px -12px 23px #fff;
+  background: #e0e0e0;
+}
+
+
+.common-card {
+  border: 1px solid #E0E8ED;
+  background: white;
+  padding: 16px; /* equals p-4 in Tailwind */
+  border-radius: 10px;
+}

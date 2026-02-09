@@ -4,7 +4,7 @@ import { userData } from "../../../../assets/mock-data/UserData";
 
 const LeadersCard = () => {
   return (
-    <Card className="mt-4">
+    <div className="common-card mt-4">
       <h3 className="font-bold text-base leading-[16px] capitalize text-[#1D3557] mb-3">
         Leaders
       </h3>
@@ -33,7 +33,7 @@ const LeadersCard = () => {
           );
         })}
       </Row>
-    </Card>
+    </div>
   );
 };
 

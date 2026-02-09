@@ -9,7 +9,7 @@ const EvidenceCards = () => {
   return (
     <Row gutter={[15, 15]} className="mt-2">
       <Col xl={6} lg={6} md={6} sm={6} xs={12}>
-        <Card>
+        <div className="common-card">
           <div className="flex items-center gap-4">
             <img src={file} alt="" />
             <div>
@@ -21,10 +21,10 @@ const EvidenceCards = () => {
               </p>
             </div>
           </div>
-        </Card>
+        </div>
       </Col>
       <Col xl={6} lg={6} md={6} sm={6} xs={12}>
-        <Card>
+        <div className="common-card">
           <div className="flex items-center gap-4">
             <img src={fileSearch} alt="" />
             <div>
@@ -36,10 +36,10 @@ const EvidenceCards = () => {
               </p>
             </div>
           </div>
-        </Card>
+        </div>
       </Col>
       <Col xl={6} lg={6} md={6} sm={6} xs={12}>
-        <Card>
+        <div className="common-card">
           <div className="flex items-center gap-4">
             <img src={fileExport} alt="" />
             <div>
@@ -51,10 +51,10 @@ const EvidenceCards = () => {
               </p>
             </div>
           </div>
-        </Card>
+        </div>
       </Col>
       <Col xl={6} lg={6} md={6} sm={6} xs={12}>
-        <Card>
+        <div className="common-card">
           <div className="flex items-center gap-4">
             <img src={fileValidation} alt="" />
             <div>
@@ -66,7 +66,7 @@ const EvidenceCards = () => {
               </p>
             </div>
           </div>
-        </Card>
+        </div>
       </Col>
     </Row>
   );

@@ -108,11 +108,10 @@ const Evidence = () => {
       },
     },
   ];
-
  
   return (
     <>
-      <Card>
+      <div className="common-card">
         <div className="overflow-x-auto">
         <Table
           columns={columns}
@@ -121,7 +120,7 @@ const Evidence = () => {
           className="rounded-xl custom-table"
         />
         </div>
-      </Card>
+      </div>
       <Row gutter={[15, 15]} className="mt-4">
         <Col xl={16} lg={16}>
           <Card>
@@ -178,10 +177,10 @@ const Evidence = () => {
           </Card>
         </Col>
         <Col xl={8} lg={8}>
-        <Card>
-            <h4 className="font-bold text-base leading-[16px] capitalize text-[#1D3557]">
+        <div className="common-card">
+            <h3 className="font-bold text-base leading-[16px] capitalize text-[#1D3557]">
               Recent Activities
-            </h4>
+            </h3>
             <Divider className="mb-0" />
             {recentActivity?.map((user, index) => (
               <div key={user.id || index}>
@@ -201,7 +200,7 @@ const Evidence = () => {
                 {index !== recentActivity.length - 1 && <Divider />}
               </div>
             ))}
-          </Card>
+          </div>
         </Col>
       </Row>
     </>

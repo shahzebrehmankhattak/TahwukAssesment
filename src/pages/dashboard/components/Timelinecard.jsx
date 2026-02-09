@@ -1,7 +1,5 @@
 import { Card } from "antd";
 import React from "react";
-import { Button, Dropdown ,Space} from "antd";
-import { DownOutlined } from "@ant-design/icons";
 
 const items = [
   {
@@ -35,9 +33,8 @@ const Timelinecard = () => {
   const progressPercent =
     (completedCount / (timelineData.length - 1)) * 100;
   return (
-    <Card>
+    <div className="common-card">
       <div className="w-full bg-white ">
-      {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-lg font-semibold">Project Timeline</h2>
         <select className="border rounded-lg px-3 py-1 text-sm">
@@ -47,7 +44,6 @@ const Timelinecard = () => {
 
       <div className="relative">
   <div className="h-3 bg-gray-200 rounded-full" />
-
   <div
     className="h-3 bg-green-500 rounded-full absolute top-0 left-0 transition-all"
     style={{ width: `${progressPercent}%` }}
@@ -88,7 +84,7 @@ const Timelinecard = () => {
   ))}
 </div>
     </div>
-    </Card>
+    </div>
   );
 };
 

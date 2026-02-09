@@ -2,7 +2,7 @@ import { Card, Col, Row } from "antd";
 import React from "react";
 import file from "../../../assets/files.png";
 import fileExport from "../../../assets/file-export.png";
-import fileSearch from "../../../assets/file-Search.png";
+import fileSearch from "../../../assets/file-search.png";
 import fileValidation from "../../../assets/file-verified.png";
 
 const EvidenceCards = () => {
